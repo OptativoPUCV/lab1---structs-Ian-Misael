@@ -153,12 +153,8 @@ Nodo *crearListaEnlazada(int arr[], int size)
       temporal->numero = arr[i];
       temporal->siguiente = NULL;
       
-      if (cabeza == NULL) {
-        cabeza = temporal;
-      }
-      else {
-        actual->siguiente = temporal;
-      }
+      if (cabeza == NULL) cabeza = temporal;
+      else actual->siguiente = temporal;
       actual = temporal;
     }
   return cabeza;
