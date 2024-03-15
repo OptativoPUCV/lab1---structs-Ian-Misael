@@ -97,7 +97,7 @@ int checkSorted(int arr[], int size)
       if (arr[i] <= arr[i+1]) {
         contAscendente++;
       }
-      else if (arr[i] >= arr[i+1]) {
+      if (arr[i] >= arr[i+1]) {
         contDescendente++;
       }
     }
