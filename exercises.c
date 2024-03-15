@@ -14,9 +14,8 @@ int findMax(int arr[], int size)
   int mayor = arr[0];
   for (int i = 0 ; i < size ; i++)
     {
-      if (arr[i] > mayor) {
+      if (arr[i] > mayor) 
         mayor = arr[i];
-      }
     }
   return mayor;
 }
@@ -94,19 +93,11 @@ int checkSorted(int arr[], int size)
 
   for (int i = 0 ; i < size - 1 ; i++)
     {
-      if (arr[i] <= arr[i+1]) {
-        contAscendente++;
-      }
-      if (arr[i] >= arr[i+1]) {
-        contDescendente++;
-      }
+      if (arr[i] <= arr[i+1]) contAscendente++;
+      if (arr[i] >= arr[i+1]) contDescendente++;
     }
-  if (contAscendente == size - 1) {
-    return 1;
-  }
-  if (contDescendente == size - 1) {
-    return -1;
-  }
+  if (contAscendente == size - 1) return 1;
+  if (contDescendente == size - 1) return -1;
   return 0;
 }
 
@@ -159,4 +150,3 @@ Nodo *crearListaEnlazada(int arr[], int size)
     }
   return cabeza;
 }
-
