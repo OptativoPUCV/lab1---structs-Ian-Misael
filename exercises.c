@@ -157,7 +157,8 @@ Nodo *crearListaEnlazada(int arr[], int size)
         cabeza = temporal;
       }
       else {
-        actual = cabeza;
+        actual->siguiente = temporal;
+        actual = temporal;
       }
     }
   return cabeza;
