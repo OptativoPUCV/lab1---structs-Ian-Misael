@@ -136,7 +136,7 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
 
 /*
 Ejercicio 7: Lista enlazada de números
-Descripción: Escribe una función que tome un arreglo de enteros y su tamaño, y luego cree una lista enlazada usando la estructura Nodo. Cada nodo de la lista debe contener un número del arreglo, y los nodos deben estar enlazados en el mismo orden que los números aparecen en el arreglo. El último nodo de la lista debe apuntar a NULL.La función debe devolver un puntero al primer nodo de la lista enlazada.Recuerda reservar memoria dinámica para cada nodo usando malloc.Puedes guiarte con lo que vimos en las clases (diapos).
+Descripción: Escribe una función que tome un arreglo de enteros y su tamaño, y luego cree una lista enlazada usando la estructura Nodo. Cada nodo de la lista debe contener un número del arreglo, y los nodos deben estar enlazados en el mismo orden que los números aparecen en el arreglo. El último nodo de la lista debe apuntar a NULL.La función debe devolver un puntero al primer nodo de la lista enlazada. Recuerda reservar memoria dinámica para cada nodo usando malloc.Puedes guiarte con lo que vimos en las clases (diapos).
 */
 
 typedef struct nodo {
@@ -161,5 +161,5 @@ Nodo *crearListaEnlazada(int arr[], int size)
         ultimo = nuevoNodo;
       }
     }
-  return NULL;
+  return cabeza;
 }
