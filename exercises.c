@@ -67,8 +67,8 @@ Ejercicio 4: Fusión de dos Arreglos Ordenados
 Descripción: Escribe una función que tome dos arreglos ordenados de menor a mayor y sus tamaños, y luego fusione estos dosarreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) 
+{
   int i = 0, j = 0;
   for (int k = 0 ; k < size1 + size2 ; k++)
     {
