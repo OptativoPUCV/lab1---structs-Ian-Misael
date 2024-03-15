@@ -224,3 +224,14 @@ Fri 15 Mar 2024 12:20:25 PM UTC:
  tests:  0|1
 total_score: 60/70
 43fa851
+Fri 15 Mar 2024 08:53:32 PM UTC: 
+ exercises.c | 17 +++++++++++++++--
+ 1 file changed, 15 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:150:9: error: variable ‘ultimo’ set but not used [-Werror=unused-but-set-variable]
+  150 |   Nodo *ultimo = NULL;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fdd4ada
