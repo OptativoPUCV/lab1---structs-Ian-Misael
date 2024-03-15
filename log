@@ -258,3 +258,14 @@ Fri 15 Mar 2024 09:01:10 PM UTC:
  tests:  0|0
 total_score: 70/70
 8d89cbc
+Fri 15 Mar 2024 09:07:59 PM UTC: 
+ exercises.c | 25 ++++++++-----------------
+ 1 file changed, 8 insertions(+), 17 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:149:43: error: variable ‘actual’ set but not used [-Werror=unused-but-set-variable]
+  149 |   Nodo *cabeza = NULL, *temporal = NULL, *actual = NULL;
+      |                                           ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+069d26a
